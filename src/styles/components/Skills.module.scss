@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import '../../styles/variables.scss';
+
+.skills {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20vh;
+}
+
+.sectionTitle {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #FF7E33;
+  margin-bottom: 2%;
+}
+
+.iconsContainer {
+  overflow: hidden; /* Masquer les icônes qui sont hors du conteneur */
+  width: 20%; /* Taille du conteneur pour le défilement */
+  font-size: 4.5rem;
+}
+
+.icons {
+  display: flex; /* Aligner les icônes en ligne */
+  animation: scroll-left 20s linear infinite; /* Animation continue, ajuste la durée */
+}
+
+.icon {
+  
+  
+  color: #333; /* Couleur des icônes */
+}
+
+/* Animation du défilement */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%); /* Fin du défilement à gauche */
+  }
+}

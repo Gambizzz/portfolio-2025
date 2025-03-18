@@ -1,0 +1,28 @@
+.cursor {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-image: url('/images/cursor.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  transform: translate(-30%, -25%);
+  z-index: 9999;
+  transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease, background-image 0.2s ease;
+}
+
+.hoverLink {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(120, 24, 154, 0.3);
+  border: 1px solid rgb(255, 99, 71);
+  background-image: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, border 0.2s ease;
+}
+
+
+
+
+

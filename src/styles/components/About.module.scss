@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import '../../styles/variables.scss';
+
+.about {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: none;
+  margin-top: 20vh;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.sectionTitle {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #FF7E33;
+  margin-bottom: 2%;
+}
+
+.leftText, .rightText {
+  width: 50%;
+  padding: 20px;
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 35px auto 0;
+    max-width: 100%;
+    color: $text-color;
+
+    strong {
+      color: #9E89B6;
+      font-size: 20px;
+    }
+  }
+}
+
+.number {
+  color: #FF7E33;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 34px;
+    right: 34px;
+    bottom: -14px;
+    background-color: #BAD381;
+    z-index: 0;
+  }
+
+  .image {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    display: block;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.33);
+  }
+}
+
+
+/* CV BUTTONS */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3%;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.btn {
+  border: none;
+  width: 10em;
+  height: 3em;
+  border-radius: 3em;
+  border: 1px solid #FF7E33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  cursor: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px #9e89b686;
+}
+
+.text {
+  font-weight: 400;
+  color: #FF7E33;
+  font-size: medium;
+}
+
+
+
+
+
+
+
+
+

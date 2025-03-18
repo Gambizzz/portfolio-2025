@@ -1,0 +1,148 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+.hero {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFFCE8;
+  text-align: center;
+  position: relative;
+}
+
+.heroSvg {
+  margin-top: 10%;
+}
+
+/* Cercle avec les textes */
+.circleText {
+  color: #9E89B6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #7C6597;
+  border-radius: 50px;
+  width: 690px;
+  height: 25px;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  text-align: center;
+  position: relative;
+  margin-top: 5%;
+}
+
+.dot {
+  font-size: 60px;
+  margin: 0 10px;
+  color: #7C6597;
+}
+
+/* Conteneur pour le bouton et le lien */
+.bottomContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+/* Style pour le bouton avec l'animation */
+.btn {
+  width: 30px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  outline: 2px solid #FF7E33;
+  box-shadow: 0px 0px 10px #FF7E33;
+  position: relative;
+  margin-top: 5%;
+  cursor: none;
+}
+
+.scroll {
+  width: 5px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #FF7E33;
+  box-shadow: 0px 0px 10px #FF7E33;
+  animation: scroll_4013 2s linear infinite;
+  transform: translateY(40%);
+}
+
+/* Animation pour le bouton scroll */
+@keyframes scroll_4013 {
+  0% {
+    transform: translateY(40%);
+  }
+
+  50% {
+    transform: translateY(90%);
+  }
+  100% {
+    transform: translateY(40%);
+  }
+}
+
+/* Style pour le lien avec hover */
+.menuLink {
+  color: #FF7E33;
+  line-height: 2;
+  position: relative;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: none;
+}
+
+.menuLink::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #FF7E33;
+  position: absolute;
+  bottom: -.1rem;
+  left: 0;
+  transition: transform .4s, opacity .4s;
+  opacity: 0;
+}
+
+.menuLink:hover::before {
+  transform: translateY(-.25rem);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
