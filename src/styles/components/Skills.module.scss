@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
 @import '../../styles/variables.scss';
 
@@ -15,32 +15,68 @@
   font-style: normal;
   font-size: 80px;
   color: #FF7E33;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: #c0a1e361;
+  border: 2px solid #9E89B6;
+  border-radius: 50px;
+  color: #7C6597;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+.tab:hover {
+  background: #9E89B6;
+  border-color: #7C6597;
+  color: white;
+}
+
+.activeTab {
+  background: #9E89B6;
+  border-color: #7C6597;
+  color: white;
 }
 
 .iconsContainer {
-  overflow: hidden; /* Masquer les icônes qui sont hors du conteneur */
-  width: 20%; /* Taille du conteneur pour le défilement */
-  font-size: 4.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
 }
 
-.icons {
-  display: flex; /* Aligner les icônes en ligne */
-  animation: scroll-left 20s linear infinite; /* Animation continue, ajuste la durée */
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .icon {
-  
-  
-  color: #333; /* Couleur des icônes */
+  font-size: 4rem;
+  transition: transform 0.3s;
 }
 
-/* Animation du défilement */
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%); /* Fin du défilement à gauche */
-  }
+.icon:hover {
+  transform: scale(1.1);
 }
+
+.iconLabel {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #AE8172;
+  margin-top: 8px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+

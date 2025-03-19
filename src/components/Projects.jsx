@@ -6,10 +6,8 @@ const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className={styles.projects}>
-      <div>
-        PROJETS
-      </div>
+    <section id="skills" className={styles.skills}>
+      <h2 className={styles.sectionTitle}>{t('projects')}</h2>
     </section>
   );
 };
