@@ -5,6 +5,13 @@ import styles from '../styles/components/About.module.scss';
 const About = () => {
   const { t } = useTranslation();
 
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById('skills');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="about" className={styles.about}>
       <h2 className={styles.sectionTitle}>{t('about')}</h2>
@@ -33,7 +40,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Boutons de téléchargement de CV */}
       <div className={styles.buttonContainer}>
         <a href="/pdf/CV_FR.pdf" download>
           <button className={styles.btn}>
@@ -46,6 +52,11 @@ const About = () => {
           </button>
         </a>
       </div>
+
+      {/* Lien Hover */}
+      <a className={styles.menuLink} href="#skills" onClick={scrollToNextSection}>
+          {t('scroll2')}
+        </a>
     </section>
   );
 };

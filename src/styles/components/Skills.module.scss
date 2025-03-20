@@ -6,7 +6,7 @@
   font-family: 'Raleway', sans-serif;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 20vh;
+  
 }
 
 .sectionTitle {
@@ -39,13 +39,13 @@
 .tab:hover {
   background: #9E89B6;
   border-color: #7C6597;
-  color: white;
+  color: #FFFCE8;
 }
 
 .activeTab {
   background: #9E89B6;
   border-color: #7C6597;
-  color: white;
+  color: #FFFCE8;
 }
 
 .iconsContainer {
@@ -78,5 +78,34 @@
   margin-top: 8px;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
+}
+
+/* Style pour le lien avec hover */
+.menuLink {
+  color: #FF7E33;
+  line-height: 2;
+  position: relative;
+  margin-top: 60px;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: none;
+}
+
+.menuLink::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #FF7E33;
+  position: absolute;
+  bottom: -.1rem;
+  left: 0;
+  transition: transform .4s, opacity .4s;
+  opacity: 0;
+}
+
+.menuLink:hover::before {
+  transform: translateY(-.25rem);
+  opacity: 1;
 }
 

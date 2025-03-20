@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      
+
       <section id="next-section">
         <Navbar />
         <main>

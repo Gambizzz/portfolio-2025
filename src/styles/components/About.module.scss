@@ -7,7 +7,7 @@
   width: 100%;
   box-sizing: border-box;
   cursor: none;
-  margin-top: 20vh;
+  margin-top: -2vh;
 }
 
 .contentContainer {
@@ -24,7 +24,7 @@
   font-style: normal;
   font-size: 80px;
   color: #FF7E33;
-  margin-bottom: 2%;
+  margin-bottom: 0%;
 }
 
 .leftText, .rightText {
@@ -62,17 +62,17 @@
   &::before {
     content: "";
     position: absolute;
-    top: -14px;
-    left: 34px;
-    right: 34px;
-    bottom: -14px;
+    top: -10px;
+    left: 28px;
+    right: 28px;
+    bottom: -10px;
     background-color: #BAD381;
     z-index: 0;
   }
 
   .image {
     width: 80%;
-    max-width: 900px;
+    max-width: 600px;
     height: auto;
     position: relative;
     z-index: 1;
@@ -87,7 +87,7 @@
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-top: 3%;
+  margin-top: 2%;
 
   a {
     text-decoration: none;
@@ -118,6 +118,36 @@
   font-weight: 400;
   color: #FF7E33;
   font-size: medium;
+}
+
+
+/* Style pour le lien avec hover */
+.menuLink {
+  color: #FF7E33;
+  line-height: 2;
+  position: relative;
+  margin-top: 30px;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: none;
+}
+
+.menuLink::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #FF7E33;
+  position: absolute;
+  bottom: -.1rem;
+  left: 0;
+  transition: transform .4s, opacity .4s;
+  opacity: 0;
+}
+
+.menuLink:hover::before {
+  transform: translateY(-.25rem);
+  opacity: 1;
 }
 
 

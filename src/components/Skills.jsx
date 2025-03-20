@@ -62,6 +62,13 @@ const Skills = () => {
     ],
   };
 
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById('projects');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="skills" className={styles.skills}>
       <h2 className={styles.sectionTitle}>{t('skills')}</h2>
@@ -93,11 +100,17 @@ const Skills = () => {
           </div>
         ))}
       </div>
+
+      {/* Lien Hover vers la prochaine section */}
+      <a className={styles.menuLink} href="#projects" onClick={scrollToNextSection}>
+        {t('scroll3')}
+      </a>
     </section>
   );
 };
 
 export default Skills;
+
 
 
 

@@ -6,6 +6,7 @@ const resources = {
     translation: {
       Home: "Home",
       About: "About",
+      Skills: "Skills",
       Projects: "Projects",
 
       dev_hero: "FULLSTACK DEVELOPER",
@@ -22,6 +23,8 @@ const resources = {
       ambition2: "My determination to innovate and my thirst for learning allow me to always seek the perfect balance between design and performance to contribute significantly to a development team.",
       french_cv: "French CV",
       english_cv: "English CV",
+      scroll2: "CONTINUE",
+      scroll3: "LAST STEP",
 
       skills: "DEV SKILLS",
       "front-end": "Front-end",
@@ -64,6 +67,7 @@ const resources = {
     translation: {
       Home: "Accueil",
       About: "À propos",
+      Skills: "Compétences",
       Projects: "Projets",
 
       dev_hero: "DÉVELOPPEUSE FULLSTACK",
@@ -80,6 +84,8 @@ const resources = {
       ambition2: "Ma détermination à innover et ma soif d’apprentissage me permettent de toujours rechercher l’équilibre parfait entre design et performance pour contribuer de manière significative à une équipe de développement.",
       french_cv: "CV français",
       english_cv: "CV anglais",
+      scroll2: "POURSUIVRE",
+      scroll3: "DERNIÈRE ÉTAPE",
 
       skills: "COMPÉTENCES TECHNIQUES",
       "front-end": "Front-end",
